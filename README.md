@@ -30,3 +30,39 @@ python opendatasoft_to_dvg_geo.py
 
 - Python 3.x
 - pandas
+
+## Description
+
+The script is designed to process property value request data for multiple years. The data files are expected to be in CSV format and have specific columns. During processing, some columns are dropped, and others are renamed to fit a desired naming convention. The processed data is then saved to new CSV files.
+
+### Steps
+
+1. **Setting Parameters**: The script sets the start and end years for which the data will be processed.
+2. **Data Type Definitions**: A dictionary is defined to specify the data types for each column in the CSV file.
+3. **Data Cleaning**: Lists and dictionaries are defined for columns to be dropped and renamed, respectively.
+4. **Processing**: For each year in the specified range:
+   - The script reads the CSV file for that year.
+   - Columns are renamed according to the defined dictionary.
+   - Unwanted columns are dropped.
+   - The cleaned data is saved to a new CSV file.
+
+### Usage
+
+To use the script:
+
+1. Ensure you have the necessary Python libraries installed, especially `pandas`.
+2. Place the script in the same directory as the data files, or adjust the file paths in the script accordingly.
+3. Run the script:
+
+```bash
+python opendatasoft_to_dvg_geo.py
+```
+
+The output files will be saved in the specified directory (by default, the same directory as the script) with names like `full_YEAR.csv` where `YEAR` is the respective year of the data.
+
+### Dependencies
+
+- Python 3.x
+- pandas
+
+This should provide a clear overview for users who want to understand and use the script.
