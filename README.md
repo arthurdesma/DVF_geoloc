@@ -26,10 +26,6 @@ python opendatasoft_to_dvg_geo.py
 
 3. The output will be saved to a specified file (refer to the script for exact file name and path).
 
-## Dependencies
-
-- Python 3.x
-- pandas
 
 ## Description
 
